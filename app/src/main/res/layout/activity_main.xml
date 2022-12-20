@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/purple_700">
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewAbc"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            app:srcCompat="@drawable/abc_light" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewRecent"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="match_parent"-->
+
+
+<!--            app:srcCompat="@drawable/recent_light" />-->
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+
+            app:srcCompat="@drawable/search" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewAdd"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            app:srcCompat="@drawable/add" />-->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+
+            app:srcCompat="@drawable/profile_light" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/purple_700"
+        android:layout_marginTop="50dp"
+        android:id="@+id/search_bar"
+        >
+        <EditText
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/search_text"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Найти"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/users"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple_200">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_view"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
